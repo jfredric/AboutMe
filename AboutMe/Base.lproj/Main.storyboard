@@ -81,33 +81,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="K1Y-5k-FOo">
-                                <rect key="frame" x="11.5" y="84" width="297" height="464"/>
+                                <rect key="frame" x="36.5" y="104" width="247" height="444"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headshot" translatesAutoresizingMaskIntoConstraints="NO" id="fBw-n8-s89">
-                                        <rect key="frame" x="0.0" y="0.0" width="297" height="297"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="247" height="247"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="fBw-n8-s89" secondAttribute="height" multiplier="1:1" id="Otr-BX-aby"/>
                                         </constraints>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Jv0-WR-0YW">
-                                        <rect key="frame" x="0.0" y="434" width="297" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Jv0-WR-0YW">
+                                        <rect key="frame" x="0.0" y="414" width="247" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjI-Jg-eiz">
-                                                <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="30"/>
                                                 <state key="normal" title="My Goals"/>
                                                 <connections>
                                                     <segue destination="ggz-E8-K1o" kind="show" id="hpf-Ah-uxY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3b-5K-NaD">
-                                                <rect key="frame" x="101.5" y="0.0" width="94" height="30"/>
+                                                <rect key="frame" x="72" y="0.0" width="80" height="30"/>
                                                 <state key="normal" title="My Resume"/>
                                                 <connections>
                                                     <segue destination="Cx2-pk-Df4" kind="show" id="z3x-MM-k1A"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1U-87-BPY">
-                                                <rect key="frame" x="203.5" y="0.0" width="93.5" height="30"/>
+                                                <rect key="frame" x="160" y="0.0" width="87" height="30"/>
                                                 <state key="normal" title="My Favorites"/>
                                                 <connections>
                                                     <segue destination="Uma-6c-QyT" kind="show" id="q5Q-8O-0BW"/>
@@ -121,7 +121,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="K1Y-5k-FOo" firstAttribute="centerX" secondItem="JBn-Bd-Ijw" secondAttribute="centerX" id="2R4-34-eRS"/>
-                            <constraint firstItem="K1Y-5k-FOo" firstAttribute="top" secondItem="yLf-na-fj2" secondAttribute="bottom" constant="20" id="M4X-3J-w5u"/>
+                            <constraint firstItem="K1Y-5k-FOo" firstAttribute="top" secondItem="yLf-na-fj2" secondAttribute="bottom" constant="40" id="M4X-3J-w5u"/>
                             <constraint firstItem="qKA-0H-F6m" firstAttribute="top" secondItem="K1Y-5k-FOo" secondAttribute="bottom" constant="20" id="t68-eR-4pW"/>
                         </constraints>
                     </view>
@@ -174,7 +174,7 @@
         <scene sceneID="agO-oB-pJm">
             <objects>
                 <tableViewController title="My Favorites" id="Uma-6c-QyT" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="20" sectionHeaderHeight="1" sectionFooterHeight="1" id="Y38-18-4gD">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="20" sectionHeaderHeight="18" sectionFooterHeight="18" id="Y38-18-4gD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -182,10 +182,10 @@
                             <tableViewSection headerTitle="Movies" id="kYF-G2-Ayg">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="hH3-lH-cQ2">
-                                        <rect key="frame" x="0.0" y="55.5" width="320" height="75"/>
+                                        <rect key="frame" x="0.0" y="56" width="320" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hH3-lH-cQ2" id="nqc-Ol-7s6">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star-wars-poster" translatesAutoresizingMaskIntoConstraints="NO" id="Uil-ab-KgA">
@@ -200,21 +200,21 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Synopsis..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dkf-4B-B4C">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Over the planet Aquilae, a group of starfighters flew toward a distant..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dkf-4B-B4C">
                                                     <rect key="frame" x="83" y="29" width="229" height="38"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="rds-df-Y00">
-                                        <rect key="frame" x="0.0" y="130.5" width="320" height="75"/>
+                                        <rect key="frame" x="0.0" y="131" width="320" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rds-df-Y00" id="6fw-bB-TSM">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sandlot-poster" translatesAutoresizingMaskIntoConstraints="NO" id="mec-KV-O6W">
@@ -229,11 +229,11 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Synopsis..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gHR-rk-thJ">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="When Scottie Smalls (Thomas Guiry) moves to a new neighborhood..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gHR-rk-thJ">
                                                     <rect key="frame" x="83" y="29" width="229" height="38"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
@@ -244,10 +244,10 @@
                             <tableViewSection headerTitle="Books" id="sF4-9S-qrJ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="o7f-ef-df4">
-                                        <rect key="frame" x="0.0" y="244.5" width="320" height="75"/>
+                                        <rect key="frame" x="0.0" y="262" width="320" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o7f-ef-df4" id="iqa-1V-inl">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enders-game-cover" translatesAutoresizingMaskIntoConstraints="NO" id="MJG-e9-5d6">
@@ -262,21 +262,21 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Synopsis..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VkN-1p-usW">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="When hostile aliens called the Formics attack Earth, only the legendary..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VkN-1p-usW">
                                                     <rect key="frame" x="83" y="29" width="229" height="38"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="4PI-82-XvW">
-                                        <rect key="frame" x="0.0" y="319.5" width="320" height="75"/>
+                                        <rect key="frame" x="0.0" y="337" width="320" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4PI-82-XvW" id="o58-sb-egO">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ready-player-one-cover" translatesAutoresizingMaskIntoConstraints="NO" id="4pe-mm-pdm">
@@ -291,11 +291,11 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Synopsis..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZUA-pt-oSI">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Welcome to the OASIS, a hyper-realistic, 3D, videogame paradise. It's 2045..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZUA-pt-oSI">
                                                     <rect key="frame" x="83" y="29" width="229" height="38"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
@@ -306,10 +306,10 @@
                             <tableViewSection headerTitle="Music" id="oWl-3z-Wad">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="i9g-XL-Ern">
-                                        <rect key="frame" x="0.0" y="433.5" width="320" height="75"/>
+                                        <rect key="frame" x="0.0" y="468" width="320" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i9g-XL-Ern" id="6D5-MV-D6K">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rage-album" translatesAutoresizingMaskIntoConstraints="NO" id="NNw-s4-PZV">
@@ -324,21 +324,21 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Synopsis..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K6W-0d-5HY">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="The Battle of Los Angeles is the third studio album by the American rap metal..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K6W-0d-5HY">
                                                     <rect key="frame" x="83" y="29" width="229" height="38"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="SM6-ol-8df">
-                                        <rect key="frame" x="0.0" y="508.5" width="320" height="75"/>
+                                        <rect key="frame" x="0.0" y="543" width="320" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SM6-ol-8df" id="IcF-0K-FTb">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bush-album" translatesAutoresizingMaskIntoConstraints="NO" id="CAk-xl-Xbz">
@@ -353,11 +353,11 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Synopsis..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6zR-yf-9Zk">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Razorblade Suitcase is the second studio album by British rock band Bush." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6zR-yf-9Zk">
                                                     <rect key="frame" x="83" y="29" width="229" height="38"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
@@ -375,46 +375,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MF1-gH-v1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2587.5" y="922.18309859154931"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="SdR-mZ-LPh">
-            <objects>
-                <viewController id="UdG-d2-UBq" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2ZY-aC-Fqi"/>
-                        <viewControllerLayoutGuide type="bottom" id="mUX-3N-Q9j"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Apl-zn-GN7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Goal Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNY-sy-nHD">
-                                <rect key="frame" x="124" y="72" width="73" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zmb-Fu-hdM">
-                                <rect key="frame" x="16" y="101" width="288" height="447"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Plan Summary: ....  Action Items: 1. 2. 3.">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="J16-MT-ZvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="16.875" y="922.18309859154931"/>
         </scene>
         <!--My Resume-->
         <scene sceneID="kES-Tx-06J">
@@ -435,6 +395,7 @@
                                     <fragment content="Experience">
                                         <attributes>
                                             <font key="NSFont" size="18" name=".SFNSText"/>
+                                            <integer key="NSUnderline" value="1"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" Job 1 ... Job 2 ... See GitHub.com/jfredric for projects  ">
@@ -446,6 +407,7 @@
                                         <attributes>
                                             <font key="NSFont" size="18" name=".SFNSText"/>
                                             <font key="NSOriginalFont" size="18" name=".SFNSText"/>
+                                            <integer key="NSUnderline" value="1"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" General Assembly - iOS Immersive (Fall 2017) Cal Poly SLO - Computer Science (2007)  ">
@@ -457,6 +419,7 @@
                                         <attributes>
                                             <font key="NSFont" size="18" name=".SFNSText"/>
                                             <font key="NSOriginalFont" size="18" name=".SFNSText"/>
+                                            <integer key="NSUnderline" value="1"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -519,7 +482,7 @@ Git Video Game Pwnage</string>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="UdG-d2-UBq" kind="show" id="HHd-NA-iYu"/>
+                                            <segue destination="fcB-P0-dBb" kind="show" id="MtU-Kw-rP7"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TitleTableViewCell" id="ybg-Vx-3R9">
@@ -538,6 +501,9 @@ Git Video Game Pwnage</string>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ula-r0-O1v" kind="show" id="gW6-J8-7Qg"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TitleTableViewCell" id="2Ag-7L-XM3">
                                         <rect key="frame" x="0.0" y="88" width="320" height="44"/>
@@ -555,6 +521,9 @@ Git Video Game Pwnage</string>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="qhJ-s7-4a2" kind="show" id="9Fe-5N-DZJ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -586,6 +555,136 @@ Git Video Game Pwnage</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cAn-Hq-0wX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="17" y="137"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6K8-pt-zX5">
+            <objects>
+                <viewController id="ula-r0-O1v" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nJN-0g-B5N"/>
+                        <viewControllerLayoutGuide type="bottom" id="jJd-ua-Dz1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i0n-ib-ekZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zYr-2W-JGz">
+                                <rect key="frame" x="16" y="104" width="288" height="444"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Action Items: 1. Get in shape 2. Save money 3. Learn to climb
+4. Get in better shape
+5. Give up
+6. Reaffirm commitment
+7. Take time off work 8. Do it!</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Climb K2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Uk-eh-01i">
+                                <rect key="frame" x="119" y="72" width="82" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G2R-Va-sa0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="907.5" y="1661.6197183098591"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WIM-xj-LGD">
+            <objects>
+                <viewController id="fcB-P0-dBb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RQP-Km-C6Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="EPY-tu-Yoj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d7t-H5-xmE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qxe-hJ-s7C">
+                                <rect key="frame" x="16" y="104" width="288" height="444"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Action Items: 1. Sign up for GA iO Immersive 2. Complete immersive 3. Find job
+4. Profit</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start a new Career in iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSr-dQ-6h9">
+                                <rect key="frame" x="48" y="72" width="224" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r5j-jg-Jme" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="1662"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GW6-Sc-Kmq">
+            <objects>
+                <viewController id="qhJ-s7-4a2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sh6-Rm-1CV"/>
+                        <viewControllerLayoutGuide type="bottom" id="wwH-ow-5fv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UVK-Ap-v3n">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dle-9R-mtj">
+                                <rect key="frame" x="16" y="104" width="288" height="444"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Action Items: 1. Profit 2. Quit job 3. Travel to Tokyo 4. Travel to New Zealand 5. Travel to Europe ... Travel every else ?. Go back to work because your out of money</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Retire and Travel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTb-YG-amh">
+                                <rect key="frame" x="85" y="72" width="150" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4tl-wr-NHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1562" y="1662"/>
         </scene>
     </scenes>
     <resources>
